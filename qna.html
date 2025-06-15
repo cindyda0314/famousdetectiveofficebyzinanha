@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ Section</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Boxicons CSS -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+<style>
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6fa;
+  padding: 50px 15px;
+  color: #333;
+}
+
+.section-title h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 32px;
+  font-weight: 700;
+  color: #2c3e50;
+  position: relative;
+}
+
+/* 밑줄 없애기 */
+.section-title h2::after {
+  content: none;
+}
+
+.faq-list {
+  list-style: none;
+  padding: 0;
+  width: 90%;              /* 너비 늘리기 */
+  max-width: 1000px;       /* 최대 너비 제한 */
+  margin: 0 auto;
+}
+
+.faq-list li {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-left: 6px solid #B20F21;
+  border-radius: 10px;
+  background: #fff;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+  padding: 20px 25px;
+}
+
+.faq-list li:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.faq-list a {
+  display: block;
+  font-weight: 600;
+  font-size: 18px;
+  color: #B20F21;
+  text-decoration: none;
+  position: relative;
+  cursor: pointer;
+}
+
+.faq-list a:hover {
+  text-decoration: underline;
+}
+
+.faq-list .icon-show,
+.faq-list .icon-close {
+  float: right;
+  font-size: 22px;
+  transition: transform 0.3s ease;
+}
+
+.faq-list .icon-close {
+  display: none;
+}
+
+.faq-list .collapsed .icon-show {
+  display: inline;
+}
+
+.faq-list .collapsed .icon-close {
+  display: none;
+}
+
+.faq-list .collapse.show + a .icon-show {
+  display: none;
+}
+
+.faq-list .collapse.show + a .icon-close {
+  display: inline;
+}
+
+.faq-list .collapse p {
+  margin: 10px 0 0;
+  line-height: 1.6;
+  color: #444;
+}
+
+.faq-list .collapse {
+  transition: all 0.3s ease;
+}
+</style>
+
+  <!-- ======= Frequently Asked Questions Section ======= -->
+  <section id="faq" class="faq">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>명탐정 코난의 의뢰 이벤트 Q&A</h2>
+      </div>
+
+      <ul class="faq-list accordion" data-aos="fade-up">
+
+        <li>
+          <a data-bs-toggle="collapse" class="collapsed" data-bs-target="#faq1">
+            응모 일정은 어떻게 되나요?
+            <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i>
+          </a>
+          <div id="faq1" class="collapse" data-bs-parent=".faq-list">
+            <p>
+              응모 일정은 2025년 6월 17일 (화) 10:00 ~ 2025년 6월 23일 (월) 23:59 (KST) 입니다.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <a data-bs-toggle="collapse" data-bs-target="#faq2" class="collapsed">
+            응모 방법은 어떻게 되나요?
+            <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i>
+          </a>
+          <div id="faq2" class="collapse" data-bs-parent=".faq-list">
+            <p>
+              유명한 탐정 사무소 홈페이지에서 &lt;사건 의뢰하기&gt;를 통해 의뢰하실 수 있습니다.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <a data-bs-toggle="collapse" data-bs-target="#faq3" class="collapsed">
+            해당 이벤트의 증정품이 궁금해요!
+            <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i>
+          </a>
+          <div id="faq3" class="collapse" data-bs-parent=".faq-list">
+            <p>의뢰주신 사건 해결에 필요한 굿즈를 선물로 드립니다!</p>
+            <p>명탐정 코난 마취총 손목시계, 명탐정 코난 뱃지 등</p>
+            <p>(본 이벤트의 증정품은 사전 안내 없이 변경될 수 있습니다.)</p>
+          </div>
+        </li>
+
+        <li>
+          <a data-bs-toggle="collapse" data-bs-target="#faq4" class="collapsed">
+            응모 전 유의 사항이 있나요?
+            <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i>
+          </a>
+          <div id="faq4" class="collapse" data-bs-parent=".faq-list">
+            <p>해당 이벤트 응모 전 유의 사항에 대해 알려드리겠습니다.</p>
+            <p>1. 본 이벤트는 유명한 탐정 사무소 홈페이지에서만 참여가 가능합니다.</p>
+            <p>2. 본 이벤트는 응모 기간 내 의뢰된 사건들에 한해서 자동으로 이벤트 기회가 부여됩니다.</p>
+            <p>3. 한 이메일 당 2개의 사건만 의뢰 가능합니다. 2개 사건 의뢰 이후에 의뢰하시면 해당 의뢰는 폐기됩니다.</p>
+            <p>4. 개인정보 보호법 관련 상품발송 및 중복 당첨자의 개인정보를 아래와 같이 수집, 제공합니다.</p>
+            <p>- 개인정보를 제공받는 자: 유명한 탐정 사무소<br>
+               - 수집항목: 이름, 이메일, 배송주소 등<br>
+               - 수집목적: 유명한 탐정 사무소 의뢰 이벤트 응모<br>
+               - 활용기간: 이용 목적 달성 후 폐기 (이벤트 종료 이후 7일)<br>
+               - 정확한 정보 등록이 되지 않은 경우, 이벤트 참여는 무효 처리됩니다.</p>
+            <p>5. 본 이벤트는 진행 사정에 따라 일부 변경 및 취소될 수 있으며, 별도 안내 드릴 예정입니다.</p>
+          </div>
+        </li>
+      </ul>
+
+    </div>
+  </section>
+  <!-- End Frequently Asked Questions Section -->
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

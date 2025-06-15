@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Character Vote - Famous Detective Office</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <style>
+    .character-img {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+
+<body class="portfolio-details-page">
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+      <h1 class="logo"><a href="index.html">유명한 탐정 사무소</a></h1>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link" href="index.html#hero">Home</a></li>
+          <li><a class="nav-link" href="index.html#about">About</a></li>
+          <li><a class="nav-link" href="index.html#services">Services</a></li>
+          <li><a class="nav-link" href="index.html#member">Member</a></li>
+          <li class="dropdown">
+            <a href="#"><span>Portfolio</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="portfolio-details.html" target="_blank">X-File1</a></li>
+              <li><a href="portfolio-details2.html" target="_blank">X-File2</a></li>
+              <li><a href="portfolio-details3.html" target="_blank">X-File3</a></li>
+              <li><a href="portfolio-details4.html" target="_blank">X-File4</a></li>
+              <li><a href="portfolio-details5.html" target="_blank">X-File5</a></li>
+              <li><a href="portfolio-details6.html" target="_blank">X-File6</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link" href="index.html#blog">Product</a></li>
+          <li><a class="nav-link" href="index.html#contact">Contact</a></li>
+          <li class="dropdown">
+            <a href="#"><span>More</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="character-vote.html">Character Vote</a></li>
+              <li><a href="quotes.html">Quotes</a></li>
+              <li><a href="episode-pick.html">Episode Pick</a></li>
+            </ul>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ======= Hero Section ======= -->
+  <div class="hero hero-single route bg-image" style="background-image: url(assets/img/overlay-bg.jpg)">
+    <div class="overlay-mf"></div>
+    <div class="hero-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <h2 class="hero-title mb-4">Character Vote</h2>
+          <ol class="breadcrumb d-flex justify-content-center">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active">Character Vote</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main id="main" class="container">
+    <section class="portfolio-details">
+      <div class="container"></div>
+
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-8 text-center">
+            <h3>가장 좋아하는 캐릭터를 선택해주세요!</h3>
+            <p>아래 캐릭터 중 한 명을 선택하여 투표에 참여하실 수 있습니다.</p>
+          </div>
+        </div>
+
+        <form id="vote-form">
+          <div class="row justify-content-center">
+
+            <!-- 캐릭터 8명 -->
+            <div class="col-md-3 col-sm-6 mb-4">
+              <img src="assets/img/member/유명한.jpg" alt="유명한" class="character-img">
+              <div class="form-check mt-2 d-inline-flex align-items-center justify-content-center">
+                <input class="form-check-input me-2" type="radio" name="character" value="유명한" id="kogoro">
+                <label class="form-check-label ms-1" for="kogoro" style="font-size: 18px;">유명한</label>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-4">
+              <img src="assets/img/member/유미란.jpg" alt="유미란" class="character-img">
+              <div class="form-check mt-2 d-inline-flex align-items-center justify-content-center">
+                <input class="form-check-input me-2" type="radio" name="character" value="유미란" id="ran">
+                <label class="form-check-label ms-1" for="ran" style="font-size: 18px;">유미란</label>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-4">
+              <img src="assets/img/member/코난.jpg" alt="코난" class="character-img">
+              <div class="form-check mt-2 d-inline-flex align-items-center justify-content-center">
+                <input class="form-check-input me-2" type="radio" name="character" value="코난" id="conan">
+                <label class="form-check-label ms-1" for="conan" style="font-size: 18px;">코난</label>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-4">
+              <img src="assets/img/member/홍장미.jpg" alt="홍장미" class="character-img">
+              <div class="form-check mt-2 d-inline-flex align-items-center justify-content-center">
+                <input class="form-check-input me-2" type="radio" name="character" value="홍장미" id="ai">
+                <label class="form-check-label ms-1" for="ai" style="font-size: 18px;">홍장미</label>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-4">
+              <img src="assets/img/member/박세모.jpg" alt="박세모" class="character-img">
+              <div class="form-check mt-2 d-inline-flex align-items-center justify-content-center">
+                <input class="form-check-input me-2" type="radio" name="character" value="박세모" id="mitsuhiko">
+                <label class="form-check-label ms-1" for="mitsuhiko" style="font-size: 18px;">박세모</label>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-4">
+              <img src="assets/img/member/한아름.jpg" alt="한아름" class="character-img">
+              <div class="form-check mt-2 d-inline-flex align-items-center justify-content-center">
+                <input class="form-check-input me-2" type="radio" name="character" value="한아름" id="ayumi">
+                <label class="form-check-label ms-1" for="ayumi" style="font-size: 18px;">한아름</label>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-4">
+              <img src="assets/img/member/고뭉치.jpg" alt="고뭉치" class="character-img">
+              <div class="form-check mt-2 d-inline-flex align-items-center justify-content-center">
+                <input class="form-check-input me-2" type="radio" name="character" value="고뭉치" id="genta">
+                <label class="form-check-label ms-1" for="genta" style="font-size: 18px;">고뭉치</label>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-4">
+              <img src="assets/img/member/브라운박사님.jpg" alt="브라운박사님" class="character-img">
+              <div class="form-check mt-2 d-inline-flex align-items-center justify-content-center">
+                <input class="form-check-input me-2" type="radio" name="character" value="브라운박사님" id="agasa">
+                <label class="form-check-label ms-1" for="agasa" style="font-size: 18px;">브라운<br>박사님</label>
+              </div>
+            </div>
+
+          </div>
+
+          <div style="height: 10vh; display: flex; justify-content: center; align-items: center;">
+            <button type="submit" class="btn btn-lg" style="background-color: #B20F21; color: white; border: none;">
+              투표 제출하기
+            </button>
+          </div>
+
+        </form>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="copyright-box">
+            <p class="copyright">&copy; Copyright <strong>DevFolio</strong>. All Rights Reserved</p>
+            <div class="credits">
+              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    document.getElementById("vote-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const selected = document.querySelector('input[name="character"]:checked');
+      if (selected) {
+        alert("감사합니다! " + selected.value + "에게 투표하셨습니다.");
+      } else {
+        alert("캐릭터를 선택해주세요!");
+      }
+    });
+  </script>
+
+</body>
+
+</html>
